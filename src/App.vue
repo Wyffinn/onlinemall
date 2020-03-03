@@ -1,7 +1,7 @@
 <template>
-  <div id="app">
-    <MainTabbar/>
-    <router-view/>
+  <div id="app" @mousewheel.prevent>
+    <MainTabbar class="main-tabbar"/>
+    <keep-alive exclude="Detail"><router-view/></keep-alive>
   </div>
 </template>
 
@@ -11,11 +11,15 @@ import MainTabbar from 'components/content/maintabbar/MainTabbar'
     name: 'App',
     components: {
       MainTabbar
-    }
-  }
-  
+    },
+    
+  } 
 </script>
 
-<style>
-  @import "assets/css/base.css"
+
+<style scoped>
+ @import "assets/css/base.css";
+  .main-tabbar {
+    z-index: 10;
+  }
 </style>
