@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-<<<<<<< HEAD
 import router from './router/index' 
 import store from './store/vuex'
 import toast from 'components/common/toast'
