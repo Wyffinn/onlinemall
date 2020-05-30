@@ -25,11 +25,8 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-=======
-
 Vue.config.productionTip = false
 
-new Vue({
-  render: h => h(App),
-}).$mount('#app')
->>>>>>> ad1ef3509e21a0d6678422230261eb57e550e854
+// new Vue({
+//   render: h => h(App),
+// }).$mount('#app')
